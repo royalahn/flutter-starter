@@ -19,7 +19,7 @@ class App extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
-                  height: 80,
+                  height: 60,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -47,7 +47,7 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 120,
+                  height: 40,
                 ),
                 Text(
                   'Total Balance',
@@ -116,19 +116,25 @@ class App extends StatelessWidget {
                   icon: Icons.euro_rounded,
                   isInverted: false,
                 ),
-                const CurrencyCard(
-                  name: 'Dollar',
-                  amount: '55 622',
-                  code: 'USD',
-                  icon: Icons.attach_money_rounded,
-                  isInverted: true,
+                Transform.translate(
+                  offset: const Offset(0, -30),
+                  child: const CurrencyCard(
+                    name: 'Dollar',
+                    amount: '55 622',
+                    code: 'USD',
+                    icon: Icons.attach_money_rounded,
+                    isInverted: true,
+                  ),
                 ),
-                const CurrencyCard(
-                  name: 'Bitcoin',
-                  amount: '24',
-                  code: 'BTC',
-                  icon: Icons.currency_bitcoin_rounded,
-                  isInverted: false,
+                Transform.translate(
+                  offset: const Offset(0, -60),
+                  child: const CurrencyCard(
+                    name: 'Bitcoin',
+                    amount: '24',
+                    code: 'BTC',
+                    icon: Icons.currency_bitcoin_rounded,
+                    isInverted: false,
+                  ),
                 ),
               ],
             )),
