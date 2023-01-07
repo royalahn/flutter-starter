@@ -1,16 +1,11 @@
-# flutter_starter
+# Flutter Starter
 
-A new Flutter project.
+- Clone coding via [Flutter로 웹툰 앱 만들기](https://nomadcoders.co/flutter-for-beginners/)
 
-## Getting Started
+## GitHub Pages
 
-This project is a starting point for a Flutter application.
+- https://royalahn.github.io/flutter-starter
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Web | Android Emulator |
+|:---:|:---:|
+|<img src="/assets/web.png" height="800" />|<img src="/assets/android_emulator.png" height="800" />|
