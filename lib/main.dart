@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter/widgets/button.dart';
 
 void main() {
   runApp(App());
@@ -11,7 +12,7 @@ class App extends StatelessWidget {
         home: Scaffold(
       backgroundColor: const Color(0xFF181818),
       body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -68,44 +69,15 @@ class App extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF2B33A),
-                      borderRadius: BorderRadius.circular(45),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 40,
-                        vertical: 15,
-                      ),
-                      child: Text(
-                        'Transfer',
-                        style: TextStyle(
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1F2123),
-                      borderRadius: BorderRadius.circular(45),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 40,
-                        vertical: 15,
-                      ),
-                      child: Text(
-                        'Request',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  )
+                children: const [
+                  Button(
+                      text: "Transfer",
+                      backgroundColor: Color(0xFFF2B33A),
+                      textColor: Colors.black),
+                  Button(
+                      text: "Request",
+                      backgroundColor: Color(0xFF1F2123),
+                      textColor: Colors.white),
                 ],
               )
             ],
