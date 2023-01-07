@@ -1,0 +1,11 @@
+{
+  "name": "flutter-starter",
+  "scripts": {
+    "predeploy": "flutter build web --base-href /flutter-starter/ --release",
+    "deploy": "gh-pages -d build/web"
+  },
+  "homepage": "https://royalahn.github.com/flutter-starter",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
